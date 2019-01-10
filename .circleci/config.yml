@@ -30,9 +30,9 @@ jobs:
             # fallback to the latest cache if no exact match is found
             - v1-knapsack-pro-core-
 
-      - run: cd ~/knapsack-pro-core-js && npm install
-      - run: cd ~/knapsack-pro-core-js && npm run build
-      - run: cd ~/knapsack-pro-core-js && npm link
+      - run: cd ~/knapsack-pro-core-js && yarn install
+      - run: cd ~/knapsack-pro-core-js && yarn run build
+      - run: cd ~/knapsack-pro-core-js && yarn link
 
       - save_cache:
           name: Saving Cache of @knapsack-pro/core
@@ -51,10 +51,10 @@ jobs:
             # fallback to the latest cache if no exact match is found
             - v1-knapsack-pro-jest-
 
-      - run: cd ~/knapsack-pro-jest && npm install
-      - run: cd ~/knapsack-pro-jest && npm link @knapsack-pro/core
-      - run: cd ~/knapsack-pro-jest && npm run build
-      - run: cd ~/knapsack-pro-jest && npm link
+      - run: cd ~/knapsack-pro-jest && yarn install
+      - run: cd ~/knapsack-pro-jest && yarn link @knapsack-pro/core
+      - run: cd ~/knapsack-pro-jest && yarn run build
+      - run: cd ~/knapsack-pro-jest && yarn link
 
       - save_cache:
           name: Saving Cache of @knapsack-pro/jest
