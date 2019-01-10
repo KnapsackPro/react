@@ -17,6 +17,51 @@ jobs:
     parallelism: 4
 
     steps:
+      # dependencies
+      # clone @knapsack-pro/core project
+      - run:
+          name: Checkout code of @knapsack-pro/core
+          command: cd ~ && (git clone -b $CIRCLE_BRANCH --single-branch https://github.com/KnapsackPro/knapsack-pro-core-js.git || git clone --single-branch https://github.com/KnapsackPro/knapsack-pro-core-js.git)
+
+      - restore_cache:
+          keys:
+            - v1-knapsack-pro-core-{{ checksum "~/knapsack-pro-core-js/package.json" }}
+            # fallback to the latest cache if no exact match is found
+            - v1-knapsack-pro-core-
+
+      - run: cd ~/knapsack-pro-core-js && npm install
+      - run: cd ~/knapsack-pro-core-js && npm run build
+      - run: cd ~/knapsack-pro-core-js && npm link
+
+      - save_cache:
+          name: Saving Cache of @knapsack-pro/core
+          key: v1-knapsack-pro-core-{{ checksum "~/knapsack-pro-core-js/package.json" }}
+          paths:
+            - ~/knapsack-pro-core-js/node_modules
+
+      # clone @knapsack-pro/jest project
+      - run:
+          name: Checkout code of @knapsack-pro/jest
+          command: cd ~ && (git clone -b $CIRCLE_BRANCH --single-branch https://github.com/KnapsackPro/knapsack-pro-jest.git || git clone --single-branch https://github.com/KnapsackPro/knapsack-pro-jest.git)
+
+      - restore_cache:
+          keys:
+            - v1-knapsack-pro-jest-{{ checksum "~/knapsack-pro-jest/package.json" }}
+            # fallback to the latest cache if no exact match is found
+            - v1-knapsack-pro-jest-
+
+      - run: cd ~/knapsack-pro-jest && npm install
+      - run: cd ~/knapsack-pro-jest && npm link @knapsack-pro/core
+      - run: cd ~/knapsack-pro-jest && npm run build
+      - run: cd ~/knapsack-pro-jest && npm link
+
+      - save_cache:
+          name: Saving Cache of @knapsack-pro/jest
+          key: v1-knapsack-pro-jest-{{ checksum "~/knapsack-pro-jest/package.json" }}
+          paths:
+            - ~/knapsack-pro-jest/node_modules
+
+      # clone react project
       - checkout
 
       - run: echo $CIRCLE_COMPARE_URL | cut -d/ -f7
@@ -35,6 +80,9 @@ jobs:
       - run:
           name: Install Packages
           command: yarn install --frozen-lockfile
+
+      # use local version of @knapsack-pro/cypress to test it
+      - run: yarn link @knapsack-pro/cypress
 
       # - run:
       #     name: Test Packages
