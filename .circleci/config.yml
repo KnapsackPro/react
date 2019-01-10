@@ -4,6 +4,7 @@ jobs:
 
     docker:
       - image: circleci/openjdk:8-jdk-node-browsers
+        user: root
 
     environment:
       TZ: /usr/share/zoneinfo/America/Los_Angeles
