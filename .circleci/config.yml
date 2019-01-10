@@ -31,9 +31,13 @@ jobs:
           name: Install Packages
           command: yarn install --frozen-lockfile
 
+      # - run:
+      #     name: Test Packages
+      #     command: ./scripts/circleci/test_entry_point.sh
+
       - run:
           name: Test Packages
-          command: ./scripts/circleci/test_entry_point.sh
+          command: $(yarn bin)/knapsack-pro-jest
 
       - save_cache:
           name: Save node_modules cache
