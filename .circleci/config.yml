@@ -89,9 +89,7 @@ jobs:
       #     name: Test Packages
       #     command: ./scripts/circleci/test_entry_point.sh
 
-      - run:
-          name: Test Packages
-          command: $(yarn bin)/knapsack-pro-jest
+      - run: $(yarn bin)/knapsack-pro-jest
 
       - save_cache:
           name: Save node_modules cache
