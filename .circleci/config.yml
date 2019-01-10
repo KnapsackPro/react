@@ -83,7 +83,7 @@ jobs:
           command: yarn install --frozen-lockfile
 
       # use local version of @knapsack-pro/cypress to test it
-      - run: yarn link @knapsack-pro/cypress
+      - run: yarn link @knapsack-pro/jest
 
       # - run:
       #     name: Test Packages
