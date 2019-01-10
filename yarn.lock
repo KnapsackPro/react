@@ -115,10 +115,10 @@
     axios-retry "^3.1.1"
     winston "^3.1.0"
 
-"@knapsack-pro/jest@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-0.1.0.tgz#a953c32d090aab3fb3b2a9dfd439c9e63a3335c2"
-  integrity sha512-uvNHWlDkdFGvXPwnDDHmY/0DbVLP8cFwjwxQlFleLtzoD3ax0w/dmdyLj2e7KHEwJ/Yf5CjexASKStCyI4uMqA==
+"@knapsack-pro/jest@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-1.0.0.tgz#2d0132124d62c22b5769d0ea784e3dac0f960553"
+  integrity sha512-kNqN3Ty1NH9ElhZxli6RMv5x4IKZjScNnpqR5cXgISYvM0Ci/+fa8H+RXrEpJSDTRX9NuIIVk6Z9sPvpD/0NJg==
   dependencies:
     "@knapsack-pro/core" "^1.0.1"
     glob "^7.1.3"
