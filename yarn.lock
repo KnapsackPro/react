@@ -106,21 +106,21 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@knapsack-pro/core@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/core/-/core-1.0.1.tgz#902f2f73d14371774dee5e66f4e3bd531a357905"
-  integrity sha512-AsUCK78O0508PlTqsVZZpo1rhZaDu6HujXNJ60m3VTQThuMPQwmmm56ybgDbGurL8w1kVbNMjWknpms48OBdjw==
+"@knapsack-pro/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/core/-/core-1.2.0.tgz#fce4af97cbce27162870ea6de53df077b3e50a71"
+  integrity sha512-63kJpA4gEcSLLibQaKGr/nEKY2CZWkKYYKpIU8vtFCRu9ORIjX0k5rdp+0Gsckdm/QmJ/S4F7GxH0HZu+sFWrQ==
   dependencies:
     axios "^0.18.0"
     axios-retry "^3.1.1"
     winston "^3.1.0"
 
-"@knapsack-pro/jest@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-1.0.0.tgz#2d0132124d62c22b5769d0ea784e3dac0f960553"
-  integrity sha512-kNqN3Ty1NH9ElhZxli6RMv5x4IKZjScNnpqR5cXgISYvM0Ci/+fa8H+RXrEpJSDTRX9NuIIVk6Z9sPvpD/0NJg==
+"@knapsack-pro/jest@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-1.1.0.tgz#fb7b39524fcff33ec5a2e4e7d6f17b9dae10ba31"
+  integrity sha512-5EacqFSNe89+n0kcT6ptox15DC/EMgyTliaCZXFOkbGpqperh4gpZnKn9gnVAkHyuEMZWvESNPzVIiZbzX/Gdw==
   dependencies:
-    "@knapsack-pro/core" "^1.0.1"
+    "@knapsack-pro/core" "^1.2.0"
     glob "^7.1.3"
     jest "^23.6.0"
 
