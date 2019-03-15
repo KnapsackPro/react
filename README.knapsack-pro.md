@@ -16,7 +16,8 @@
 3. Install dependencies.
 
    ```
-   $ npm install
+   # use Yarn for react project to install dependencies
+   $ yarn install
    ```
 
 4. Use your local version of `@knapsack-pro/jest` and `@knapsack-pro/core` registered with node.
