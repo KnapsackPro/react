@@ -1,4 +1,4 @@
-# Jest example test suite and KnapsackPro.com
+# React example test suite and KnapsackPro.com
 
 [![CircleCI](https://circleci.com/gh/KnapsackPro/react/tree/knapsack-pro.svg?style=svg)](https://circleci.com/gh/KnapsackPro/react/tree/knapsack-pro)
 
