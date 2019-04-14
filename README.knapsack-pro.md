@@ -31,7 +31,7 @@
 
 ### When `@knapsack-pro/jest` was not yet published to npm registry
 
-Ensure you have in `package.json` local version of `knapsack-pro/jest` and run `npm install`:
+Ensure you have in `package.json` local version of `knapsack-pro/jest` and run `yarn install`:
 
 ```
 {
@@ -43,9 +43,9 @@ Ensure you have in `package.json` local version of `knapsack-pro/jest` and run `
 
 ### When `@knapsack-pro/jest` was already published in npm registry
 
-Note if you do this step for the very first time you need to remove `package-lock.json` in order to generate a fresh one instead of using what was generated in `package-lock.json` when you were using the local version of `@knapsack-pro/jest`.
+Note if you do this step for the very first time you need to remove `yarn.lock` in order to generate a fresh one instead of using what was generated in `yarn.lock` when you were using the local version of `@knapsack-pro/jest`.
 
-Ensure you have in `package.json` the latest version of `@knapsack-pro/jest` and run `npm install`:
+Ensure you have in `package.json` the latest version of `@knapsack-pro/jest` and run `yarn install`:
 
 ```
 {
