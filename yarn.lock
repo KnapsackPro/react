@@ -357,23 +357,24 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@knapsack-pro/core@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/core/-/core-1.5.0.tgz#5ab11e4480855d19460a646d573dc3156ecf06db"
-  integrity sha512-pvFeU9nnN009tnwyDGbiHZE7kWIXUjtNxMJCcin8wzRjNQ7b/+DpANSAXGi2/kz+OWx3pj/f7s9mOvAqs0ok2g==
+"@knapsack-pro/core@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/core/-/core-1.6.0.tgz#4a45ea75a085434a827e8cf61f95fb83f49b4036"
+  integrity sha512-wQ43gfxcMZpq88qCMi1vwX0AyfgDewoxBklPyS/VOAK1YIcg5NculzM9bcORXTPRSpkF7As+Vy7tExtUraSj3Q==
   dependencies:
     axios "0.18.0"
     axios-retry "^3.1.2"
     winston "^3.1.0"
 
-"@knapsack-pro/jest@^2.3.0":
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-2.3.0.tgz#d281d307ca0ef25eb6536f49608e58bd33eb8b7e"
-  integrity sha512-S/fKIVbHV6SkMTcOsuamtM/mJaXgWXb40ynmqfl8W+9VTab/wlK6gkke+E1aShHLWaxU7gJs2RANBvVn60INnw==
+"@knapsack-pro/jest@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-2.5.0.tgz#a3afc3a25d761fb7d2c97f7f170ea72bc3ee5f71"
+  integrity sha512-wgJIxTNB9glfYw+MCcYpJ+rlGdWWW9qd7/fwa3/scLTO8g71t/2LeMsIsAdRk491IcSRUFIvXksyBzZPij7cag==
   dependencies:
-    "@knapsack-pro/core" "^1.5.0"
+    "@knapsack-pro/core" "^1.6.0"
     glob "^7.1.3"
     jest "^24.8.0"
+    minimatch "^3.0.4"
     minimist "^1.2.0"
 
 "@mattiasbuelens/web-streams-polyfill@0.1.0":
