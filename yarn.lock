@@ -357,25 +357,26 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@knapsack-pro/core@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/core/-/core-1.6.1.tgz#0b54407ac68ba5aea51d5a6ba3c0b6b654733948"
-  integrity sha512-HyMIVNZ/pH+f9XvJCQl1k8Le5Wx/4V4eVFl09BU/upAopUiEqcNVJuIpjdB3bo8zl3vIWVXGEa6cO1Rfh7NbOA==
+"@knapsack-pro/core@^1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/core/-/core-1.6.2.tgz#c86d1a5c529a7e4b2414e1817dd569bb17ff50e9"
+  integrity sha512-WA+L6SeFTmhkuaM+ZgZlx3kUlD+ttGGBj6lbNLtAJqHyO+ynOKw2YvNj2i4PUCJU7YVafMEug7bCV1xXDLjPvA==
   dependencies:
     axios "0.18.1"
     axios-retry "^3.1.2"
     winston "^3.1.0"
 
-"@knapsack-pro/jest@^2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-2.6.0.tgz#cb182051770e3e029e8af1c0e97ebe5c0bfde568"
-  integrity sha512-1R+bXQs+D1wYaZAkHhEPo/+ED/xc6w2RuHx09+ZUp/cFT6jDJFwUu7QoxywX9nVtVz+n7XcKYg/fVLszzK0GMQ==
+"@knapsack-pro/jest@^2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@knapsack-pro/jest/-/jest-2.7.0.tgz#26f379fe6ef8b018eba0472666e49d2fdbec710a"
+  integrity sha512-pPzHuGdSwxvxlFDp/N8+hyamO2whbhevBn2Bu2P/I4sPIBt1noM/YGNoC6d8l9LMqdTRjN7hL1tTLajzRiR3fw==
   dependencies:
-    "@knapsack-pro/core" "^1.6.1"
+    "@knapsack-pro/core" "^1.6.2"
     glob "^7.1.3"
     jest "^24.8.0"
     minimatch "^3.0.4"
     minimist "^1.2.0"
+    uuid "^3.4.0"
 
 "@mattiasbuelens/web-streams-polyfill@0.1.0":
   version "0.1.0"
@@ -7346,6 +7347,11 @@ uuid@^3.0.0, uuid@^3.1.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.2.1.tgz#12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14"
   integrity sha512-jZnMwlb9Iku/O3smGWvZhauCf6cvvpKi4BKRiliS3cxnI+Gz9j5MEpTz2UFuXiKPJocb7gnsLHwiS05ige5BEA==
+
+uuid@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 v8flags@^2.1.1:
   version "2.1.1"
